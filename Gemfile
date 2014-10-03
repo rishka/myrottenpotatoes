@@ -8,6 +8,10 @@ gem 'rails', '3.2.15'
 gem 'sqlite3'
 
 
+#use Haml for templates
+gem 'haml'
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -36,3 +40,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# use debugger in development
+group :development, :test do
+      gem 'debugger'
+end
